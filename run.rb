@@ -31,3 +31,9 @@ def obj.mixed_args(a, b, *c, d)
     p a, b, c, d
 end
 obj.mixed_args(1, 2, 3, 4, 6, 5, 7, 8, 9)
+
+def obj.mixed_default_args(a, b=1, *c, d, e)
+    puts "Arguments:"
+    p a, b, c, d, e
+end
+obj.mixed_default_args(1, 2, 3)
