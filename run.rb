@@ -25,3 +25,9 @@ def obj.default_args(a, b, c = 1)
 end
 obj.default_args(1, 2)
 obj.default_args(1, 2, 3) 
+
+def obj.mixed_args(a, b, *c, d)
+    puts "Arguments:"
+    p a, b, c, d
+end
+obj.mixed_args(1, 2, 3, 4, 6, 5, 7, 8, 9)
